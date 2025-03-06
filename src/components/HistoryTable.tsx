@@ -306,7 +306,7 @@ function HistoryTable() {
               (JSON.stringify(input).length > 30 ? "..." : "");
 
         return (
-          <p className="text-sm rounded-lg bg-gray-400/5 p-2 text-center font-medium truncate max-w-xs">
+          <p className="text-sm rounded-lg  p-2 text-center font-medium truncate max-w-xs">
             {simplifiedInput}
           </p>
         );
@@ -332,7 +332,7 @@ function HistoryTable() {
         }
 
         return (
-          <p className="text-sm rounded-lg bg-gray-400/5 p-2 text-center font-medium truncate max-w-xs">
+          <p className="text-sm rounded-lg p-2 text-center font-medium truncate max-w-xs">
             {simplifiedOutput}
           </p>
         );
