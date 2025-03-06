@@ -1,54 +1,34 @@
-# React + TypeScript + Vite
+# Curiflow Assignment - React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project demonstrates a flow execution process with history.
 
-Currently, two official plugins are available:
+## Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   [Node.js](https://nodejs.org/) (>=18)
+-   [npm](https://www.npmjs.com/) or [pnpm](https://pnpm.io/)
 
-## Expanding the ESLint configuration
+## Setup
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1.  **Clone:** `git clone https://github.com/sourpie/curiflow-assignment.git && cd curiflow-assignment`
+2.  **Install:** `npm install` (or `pnpm install`)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Run
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1.  **Start:** `npm run dev` (or `pnpm run dev`) - Access at `http://localhost:5173/`
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Improvements in Flow Execution Screen
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+1. Improved the input for **Deployment Name**.
+2. Added a progress bar and made each log more defined and readable.
+3. Added expand toggle to better view the output or a collapsed view for a quick glance.
+4. Formatted the output tab and logs tab in case of errors.
+5. Included toasts to alert the users.
+6. Added buttons for copying and downloading the output json.
+
+
+## Improvements in Execution History Screen
+
+1. Added pagination for better viewing experience.
+2. Displayed Full Input and Output in much better format with proper indentation.
+3.  Instead of vague data like file paths, the second version presents an actionable process, making the interface more intuitive.
+4.  Added functionality to take user feedback easily.
